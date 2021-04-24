@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   
         const newBurger = {
           name: document.getElementById('burger').value.trim(),
-          //devoured: document.getElementById('devoured').checked,
+          devoured: document.getElementById('devoured').checked,
         };
   
         // Send POST request to create a new burger
