@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<body>
+
 <h1>EAT THE BURGER!</h1>
 
 <h2>Burgers to eat...</h2>
@@ -15,7 +20,7 @@
 <ul id="eaten-burgers">
   {{#each burgers}}
   {{#if devoured}}
-  {{> eatenBurger devoured=true}}
+  {{>eatenBurger devoured=true}}
   {{/if}}
   {{/each}}
 </ul>
@@ -31,3 +36,6 @@
 
   <button type="submit">Add Your Burger</button>
 </form>
+
+</body>
+</html>
