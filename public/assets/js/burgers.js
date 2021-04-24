@@ -50,9 +50,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
       changeDevourBtns.forEach((button) => {
         button.addEventListener('click', (e) => {
   
- 
           const id = e.target.getAttribute('data-id');
-          const newDev = e.target.getAttribute('data-newdevour');
+          const newDev = e.target.getAttribute('devour');
   
           const newDevoured = {
             devoured: newDev,
