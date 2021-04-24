@@ -1,0 +1,24 @@
+{
+  "name": "burger-eater.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suziestephen/burger-eater.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suziestephen/burger-eater.github.io/issues"
+  },
+  "homepage": "https://github.com/suziestephen/burger-eater.github.io#readme",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "sequelize": "^6.6.2"
+  }
+}
