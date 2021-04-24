@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   
         const newBurger = {
           name: document.getElementById('burger').value.trim(),
-          devoured: document.getElementById('devoured').checked,
+          // devoured: document.getElementById('devoured').checked,
         };
   
         // Send POST request to create a new burger
@@ -48,12 +48,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Set up the event listener for the create button
     if (changeDevourBtns) {
       changeDevourBtns.forEach((button) => {
-        button.addEventListener('click', updateDevoured);
-      });
-    }
-
-    function updateDevoured(e) {
-          // Grabs the id of the element that goes by the name, "id"
+        button.addEventListener('click', (e) => {
+  
+ 
           const id = e.target.getAttribute('data-id');
           const newDev = e.target.getAttribute('data-newdevour');
   
@@ -81,7 +78,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
               alert('something went wrong!');
             }
           });
-        };
+        });
+      });
+    }
   
 
   
