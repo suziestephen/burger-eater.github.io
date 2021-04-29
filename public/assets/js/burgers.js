@@ -54,17 +54,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
           const newDev = e.target.getAttribute('devour');
   
           const newDevoured = {
-            devoured: newDev,
+            devoured: true,
           };
-
+          console.log(newDevoured);
 
           fetch(`/api/burgers/${id}`, {
             method: 'PUT',
+            
             headers: {
+              
               Accept: 'application/json',
               'Content-Type': 'application/json',
             },
   
+           
+
             // Serialize the JSON body
             body: JSON.stringify(newDevoured),
           }).then((response) => {
