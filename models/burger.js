@@ -8,8 +8,8 @@ const burger = {
     insertOne(tableInput, colInput, cb) {
         orm.create('burgers', tableInput, colInput, (res) => cb(res))
     },
-    updateOne(table, objColVals, id, cb) {
-        orm.update('burgers', table, objColVals, id, (res) => cb(res))
+    updateOne(objColVals, condition, cb) {
+        orm.update('burgers', objColVals, condition, (res) => cb(res))
     },
     delete(condition, cb) {
         orm.delete('burgers', condition, (res) => cb(res));
